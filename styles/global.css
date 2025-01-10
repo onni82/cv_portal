@@ -1,0 +1,157 @@
+@font-face {
+	font-family: Ubuntu;
+	src: url(Ubuntu.ttf);
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(Quicksand-Regular.ttf);
+}
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	zoom: 1;
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+	font-family: "Quicksand", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: rgb(78, 87, 104);
+	margin: 0;
+	min-width: 320px;
+	background-color: rgb(231, 255, 240);
+	background-size: 100% auto;
+}
+div {
+	display: block;
+}
+#boxcontent {
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
+}
+header {
+	display: flex;
+	flex-flow: row wrap;
+	flex: 0 1 auto;
+	justify-content: space-between;
+}
+@media screen and (min-width: 440px) {
+	header {
+		justify-content: space-between;
+	}
+}
+@media screen and (max-width: 439px) {
+	header {
+		justify-content: center;
+	}
+}
+header img {
+	margin-top: 1em;
+	margin-left: 1em;
+}
+header ul {
+	margin-top: 1em;
+	text-align: center;
+	list-style: none;
+}
+header li {
+	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+img.skillLogo {
+	float: right;
+	width: 50px;
+}
+footer {
+	display: flex;
+	flex: 0 1 40px;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+footer>p,
+footer>a {
+	padding: 0 2%;
+}
+.blacktext {
+	color: #000;
+}
+#page {
+	flex: 1 1 auto;
+	padding: 0 2%;
+	background-image: url("../images/Onni1000px.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 55vw center;
+}
+.flextext {
+	display: flex;
+}
+a {
+	color: rgb(188, 119, 0);
+	text-decoration: none;
+}
+a[aria-current],
+a.active {
+	color: rgb(0, 0, 0);
+}
+a:hover {
+	color: rgb(222, 141, 0);
+	text-decoration: none;
+}
+#page > h1,
+#page > h2,
+#page > p {
+	padding: 0 2%;
+}
+#page section {
+	margin-left: 2%;
+	padding-bottom: 0.5em;
+	max-width: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+section p {
+	text-shadow: 0px 0px 8px white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p.subcategory {
+	margin-top: 0;
+	margin-left: 0;
+	font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 10px;
+}
+p {
+	font-size: 1em;
+	margin-top: 5px;
+}
+h1 {
+	font-size: 1.8em;
+	margin-bottom: 20px;
+}
+h2,
+p.subcategory {
+	font-size: 1.2em;
+}
+h3 {
+	font-size: 1em;
+}
+.centered {
+	text-align: center;
+}
+::selection {
+	color: #ff93fb;
+	background-color: #000;
+}
