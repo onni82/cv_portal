@@ -199,9 +199,9 @@ a:hover {
 }
 
 /* Easter egg span element */
-span.easteregg {
+span#easteregg {
 	cursor: pointer;
 }
-span.easteregg:hover {
+span#easteregg:hover {
 	color: #ff93fb;
 }

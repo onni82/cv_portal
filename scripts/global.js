@@ -113,7 +113,7 @@ window.addEventListener('click', function(event) {
 });
 
 // Change body background color when the user clicks on span with easteregg class
-document.querySelector('.easteregg').addEventListener('click', function() {
+document.querySelector('#easteregg').addEventListener('click', function() {
 	// Check if span has a 'clicked' class
 	if (this.classList.contains('clicked')) {
 		// Remove the 'clicked' class from the span element
