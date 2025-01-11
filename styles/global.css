@@ -168,7 +168,6 @@ h3 {
 	justify-content: center;
 	align-items: center;
 }
-
 .modal-content {
 	background-color: #fff;
 	padding: 20px;
@@ -177,7 +176,6 @@ h3 {
 	max-width: 400px;
 	margin: auto;
 }
-
 .close {
 	cursor: pointer;
 	font-size: 20px;
@@ -186,7 +184,6 @@ h3 {
 	top: 10px;
 	right: 10px;
 }
-
 .close:hover,
 .close:focus {
 	color: black;
