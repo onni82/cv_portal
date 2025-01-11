@@ -1,32 +1,32 @@
 $(document).ready(function () {
-	// Hanterar klickhändelsen på ett a-element som har klassen "clickable"
+	// Handles the click event on an a element that has the class "clickable"
 	$('a.clickable').click(function (event) {
 		event.preventDefault();
 
-		// Tar bort aria-current="page" från alla a-element
+		// Removes aria-current="page" from all a elements
 		$('a').removeAttr('aria-current');
 
-		// Lägger till aria-current="page" på det klickade a-elementet
+		// Adds aria-current="page" to the clicked a element
 		$(this).attr('aria-current', 'page');
 
-		// Hämtar den andra klassen från det klickade elementet som motsvarar länken
+		// Retrieves the second class from the clicked element that corresponds to the link
 		var className = $(this).attr('class').split(" ")[1];
 
-		// Skapar sökvägen till filen baserat på klassnamn
+		// Creates the path to the file based on class name
 		var filePath = className + '.html';
 
-		// Laddar in innehållet från filen till en dold behållare/element
+		// Loads the content from the file into a hidden container/element
 		$.get(filePath, function (data) {
-			// Skapar ett temporärt div-element som håller den laddade datan
+			// Creates a temporary div element that holds the loaded data
 			var tempDiv = $("<div>").html(data);
 
-			// Hittar det specifika div-elementet i den laddade filen
+			// Finds the specific div element in the loaded file
 			var specificContent = tempDiv.find("#page").html();
 
-			// Infogar det specifika innehållet i behållaren som är målet
+			// Inserts the specific content into the target container
 			$("#page").html(specificContent);
 
-			// Updatera URL:en utan att ladda om sidan
+			// Updates the URL in the address bar without reloading the page
 			if (className == "index") {
 				var newUrl = window.location.protocol + "//" + window.location.host + "/";
 				history.pushState({ path: newUrl }, '', newUrl);
@@ -39,28 +39,28 @@ $(document).ready(function () {
 		});
 	});
 
-	// Hanterar navigering bakåt/framåt
+	// Handles back/forward navigation
 	window.onpopstate = function (event) {
 		if (event.state && event.state.path) {
-			// Extrahera sidans namn (utan ledande snedstreck och avslutande filändelse)
+			// Extract the page name (without leading slash and trailing file extension)
 			var page = window.location.pathname.slice(1, -5);
 
 			if (page) {
-				// Skapar sökvägen till filen baserat på pathname
+				// Creates the path to the file based on pathname
 				var filePath = window.location.pathname;
 
-				// Laddar in innehållet från filen till en dold behållare/element
+				// Loads the content from the file into a hidden container/element
 				$.get(filePath, function (data) {
-					// Skapar ett temporärt div-element som håller den laddade datan
+					// Creates a temporary div element that holds the loaded data
 					var tempDiv = $('<div>').html(data);
 
-					// Hittar det specifika div-elementet i den laddade filen
+					// Finds the specific div element in the loaded file
 					var specificContent = tempDiv.find('#page').html();
 
-					// Infogar det specifika innehållet i behållaren som är målet
+					// Inserts the specific content into the target container
 					$('#page').html(specificContent);
 
-					// Uppdatera aria-current-attributet på länken som har ett klassnamn döpt efter sidan
+					// Update the aria-current attribute on the link that has a class name named after the page
 					$('a').removeAttr('aria-current');
 					$('a.' + page).attr('aria-current', 'page');
 				}).fail(function () {
