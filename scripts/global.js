@@ -70,7 +70,7 @@ $(document).ready(function () {
 		}
 	};
 
-	// JavaScript code to handle keypress detection and modal display
+	// Vanilla JavaScript code to handle keypress detection and modal display
 	let typedKeys = '';
 	const secretCode = '1337';
 	const modal = document.getElementById('myModal');
