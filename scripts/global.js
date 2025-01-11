@@ -43,7 +43,13 @@ $(document).ready(function () {
 	window.onpopstate = function (event) {
 		if (event.state && event.state.path) {
 			// Extract the page name (without leading slash and trailing file extension)
-			var page = window.location.pathname.slice(1, -5);
+			var page;
+			if (window.location.pathname == "/") {
+				page = "index";
+			}
+			else {
+				page = window.location.pathname.slice(1, -5);
+			}
 
 			if (page) {
 				// Creates the path to the file based on pathname
