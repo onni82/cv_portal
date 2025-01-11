@@ -51,7 +51,7 @@ Denna del ska byggas med Vanilla JavaScript
 - [x] Din CSS-kod ska skapa sidor som mycket väl anpassar sig utifrån olika skärmstorlekar (responsivitet)
 - [ ] Du ska ha en CSS-print som gör att utskriften av CV-sidan blir snygg.
 - [x] Din JavaScript-kod får inte finnas inuti HTML-filerna.
-- [ ] Dina påskägg ska fungera på alla sidor.
+- [x] Dina påskägg ska fungera på alla sidor.
 
 **Deploy**
 - [ ] Publicera din sida på Github Pages så att den blir åtkomlig via en länk.
