@@ -35,15 +35,15 @@ Försök lösa denna uppgift utan CSS-ramverk så som Bootstrap. Du kommer ha me
 **Layout**
 
 - [ ] Din sida ska i några delar av innehållet (eller allt innehåll) ha två eller fler kolumner.
-- [ ] Din sida ska ha ett eller flera typsnitt som laddas in från en typsnittsfil eller från exempelvis Google Fonts.
+- [x] Din sida ska ha ett eller flera typsnitt som laddas in från en typsnittsfil eller från exempelvis Google Fonts.
 - [x] Sidan ska vara någorlunda anpassad för olika skärmstorlekar så det går att ta del av innehållet utan större problem både i en mobil och på en dator.
 
 **Påskägg**
 
- Denna del ska byggas med Vanilla JavaScript
+Denna del ska byggas med Vanilla JavaScript
 - [ ] Du ska skapa två påskägg (Easter eggs) på din webbplats som besökaren ska kunna hitta
-- [ ] Ditt ena påskägg ska aktiveras av att användaren klickar på någon “udda” del av webbplatsen som man vanligtvis inte brukar klicka på. När denna del klickas på ska webbplatsens bakgrund bytas ut.
-- [ ] Ditt andra påskägg ska aktiveras när användaren skriver in en kombination på tangentbordet, exempelvis “1337”. När användaren skrivit in kombinationen på tangentbordet ska det komma upp något roligt meddelande i en modal-popup.
+    - [ ] Ditt ena påskägg ska aktiveras av att användaren klickar på någon “udda” del av webbplatsen som man vanligtvis inte brukar klicka på. När denna del klickas på ska webbplatsens bakgrund bytas ut.
+    - [ ] Ditt andra påskägg ska aktiveras när användaren skriver in en kombination på tangentbordet, exempelvis “1337”. När användaren skrivit in kombinationen på tangentbordet ska det komma upp något roligt meddelande i en modal-popup.
 
 **Tekniska krav**
 - [x] Din webbplats ska vara kompatibel med moderna webbläsare och fungera rimligt bra i alla webbläsare som inte är äldre än tre år.
