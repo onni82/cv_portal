@@ -197,3 +197,11 @@ a:hover {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+/* Easter egg span element */
+span.easteregg {
+	cursor: pointer;
+}
+span.easteregg:hover {
+	color: #ff93fb;
+}
