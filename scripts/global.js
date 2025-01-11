@@ -26,6 +26,12 @@ $(document).ready(function () {
 			// Inserts the specific content into the target container
 			$("#page").html(specificContent);
 
+			// Finds the specific title element in the loaded file
+			var specificTitle = tempDiv.find("title").html();
+
+			// Inserts the specific content into the target element
+			$("title").html(specificTitle);
+
 			// Updates the URL in the address bar without reloading the page
 			if (className == "index") {
 				var newUrl = window.location.protocol + "//" + window.location.host + "/";
@@ -65,6 +71,12 @@ $(document).ready(function () {
 
 					// Inserts the specific content into the target container
 					$('#page').html(specificContent);
+
+					// Finds the specific title element in the loaded file
+					var specificTitle = tempDiv.find("title").html();
+
+					// Inserts the specific content into the target element
+					$("title").html(specificTitle);
 
 					// Update the aria-current attribute on the link that has a class name named after the page
 					$('a').removeAttr('aria-current');
