@@ -6,6 +6,7 @@
 	font-family: Quicksand;
 	src: url(Quicksand-Regular.ttf);
 }
+
 /* body and html */
 body,
 html {
@@ -84,23 +85,39 @@ footer>a {
 
 /* page div and section content */
 #page {
-	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column; /* Stack elements vertically */
+	gap: 20px; /* Adds spacing between the h1 and sections */
 	padding: 0 2%;
-	background-image: url("../images/Onni1000px.png");
+	/* background-image: url("../images/Onni1000px.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: 55vw center;
+	background-position: 55vw center; */
+}
+#page > h1 {
+    margin-bottom: 0; /* Optional: Adjust spacing below the heading */
 }
 #page > h1,
 #page > h2,
 #page > p {
 	padding: 0 2%;
 }
-#page section {
+#page > div {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of sections on smaller screens */
+    gap: 20px; /* Adds space between the sections */
+}
+/* #page section {
 	margin-left: 2%;
 	padding-bottom: 0.5em;
 	max-width: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
+} */
+#page > div > section {
+    flex: 1 1 45%; /* Makes sections responsive with 45% width each */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1em; /* Optional: Add padding inside the sections */
+    margin: 0; /* Optional: Adjust margins */
 }
 section p {
 	text-shadow: 0px 0px 8px white;
@@ -146,6 +163,10 @@ h3 {
 ::selection {
 	color: #ff93fb;
 	background-color: #000;
+}
+section>img.fitimage {
+	max-width: 100%;
+	max-height: 50vh;
 }
 
 /* navigation */
