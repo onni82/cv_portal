@@ -15,7 +15,6 @@ html {
 }
 body {
 	zoom: 1;
-	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
 	font-family: "Quicksand", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: rgb(78, 87, 104);
 	margin: 0;
@@ -86,34 +85,24 @@ footer>a {
 /* page div and section content */
 #page {
 	display: flex;
-	flex-direction: column; /* Stack elements vertically */
-	gap: 20px; /* Adds spacing between the h1 and sections */
+	flex-direction: column;
+	gap: 20px;
 	padding: 0 2%;
-	/* background-image: url("../images/Onni1000px.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 55vw center; */
 }
 #page > h1 {
-    margin-bottom: 0; /* Optional: Adjust spacing below the heading */
+    margin-bottom: 0;
 	padding-left: 0.5em;
 }
 #page > div {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping of sections on smaller screens */
-    gap: 20px; /* Adds space between the sections */
+    flex-wrap: wrap;
+    gap: 20px;
 }
-/* #page section {
-	margin-left: 2%;
-	padding-bottom: 0.5em;
-	max-width: 50%;
-	background-color: rgba(255, 255, 255, 0.1);
-} */
 #page > div > section {
-    flex: 1 1 45%; /* Makes sections responsive with 45% width each */
+    flex: 1 1 45%;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 1em; /* Optional: Add padding inside the sections */
-    margin: 0; /* Optional: Adjust margins */
+    padding: 1em;
+    margin: 0;
 }
 section p {
 	text-shadow: 0px 0px 8px white;
@@ -181,14 +170,14 @@ a:hover {
 
 /* Basic styling for the modal */
 .modal {
-	display: none; /* Hidden by default */
+	display: none;
 	position: fixed;
-	z-index: 1; /* Sit on top */
+	z-index: 1;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+	background-color: rgba(0, 0, 0, 0.5);
 	justify-content: center;
 	align-items: center;
 }
