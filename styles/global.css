@@ -54,6 +54,14 @@ header img {
 	margin-top: 1em;
 	margin-left: 1em;
 }
+header>a#headerlogo {
+	background-image: url("../images/logo-big.png");
+	background-size: contain;
+	height: 36px;
+	width: 94px;
+	margin-top: 1em;
+	margin-left: 1em;
+}
 header ul {
 	margin-top: 1em;
 	text-align: center;
@@ -168,7 +176,7 @@ a:hover {
 	text-decoration: none;
 }
 
-/* Basic styling for the modal */
+/* basic styling for the modal */
 .modal {
 	display: none;
 	position: fixed;
@@ -204,7 +212,7 @@ a:hover {
 	cursor: pointer;
 }
 
-/* Easter egg span element */
+/* easter egg span element */
 span#easteregg {
 	cursor: pointer;
 }
