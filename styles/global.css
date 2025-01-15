@@ -96,11 +96,7 @@ footer>a {
 }
 #page > h1 {
     margin-bottom: 0; /* Optional: Adjust spacing below the heading */
-}
-#page > h1,
-#page > h2,
-#page > p {
-	padding: 0 2%;
+	padding-left: 0.5em;
 }
 #page > div {
     display: flex;
