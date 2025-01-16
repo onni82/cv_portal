@@ -34,7 +34,7 @@ Försök lösa denna uppgift utan CSS-ramverk så som Bootstrap. Du kommer ha me
 
 **Layout**
 
-- [ ] Din sida ska i några delar av innehållet (eller allt innehåll) ha två eller fler kolumner.
+- [x] Din sida ska i några delar av innehållet (eller allt innehåll) ha två eller fler kolumner.
 - [x] Din sida ska ha ett eller flera typsnitt som laddas in från en typsnittsfil eller från exempelvis Google Fonts.
 - [x] Sidan ska vara någorlunda anpassad för olika skärmstorlekar så det går att ta del av innehållet utan större problem både i en mobil och på en dator.
 
