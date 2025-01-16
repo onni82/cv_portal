@@ -21,10 +21,10 @@ $(document).ready(function () {
 			var tempDiv = $("<div>").html(data);
 
 			// Finds the specific div element in the loaded file
-			var specificContent = tempDiv.find("#page").html();
+			var specificContent = tempDiv.find("main").html();
 
 			// Inserts the specific content into the target container
-			$("#page").html(specificContent);
+			$("main").html(specificContent);
 
 			// Finds the specific title element in the loaded file
 			var specificTitle = tempDiv.find("title").html();
@@ -41,7 +41,7 @@ $(document).ready(function () {
 				history.pushState({ path: newUrl }, '', newUrl);
 			}
 		}).fail(function () {
-			$("#page").html("Sorry, there was an error loading the content.");
+			$("main").html("Sorry, there was an error loading the content.");
 		});
 	});
 
@@ -67,10 +67,10 @@ $(document).ready(function () {
 					var tempDiv = $('<div>').html(data);
 
 					// Finds the specific div element in the loaded file
-					var specificContent = tempDiv.find('#page').html();
+					var specificContent = tempDiv.find('main').html();
 
 					// Inserts the specific content into the target container
-					$('#page').html(specificContent);
+					$('main').html(specificContent);
 
 					// Finds the specific title element in the loaded file
 					var specificTitle = tempDiv.find("title").html();
@@ -82,7 +82,7 @@ $(document).ready(function () {
 					$('a').removeAttr('aria-current');
 					$('a.' + page).attr('aria-current', 'page');
 				}).fail(function () {
-					$('#page').html("Sorry, there was an error loading the content.");
+					$('main').html("Sorry, there was an error loading the content.");
 				});
 			}
 		}
