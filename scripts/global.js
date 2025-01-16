@@ -10,7 +10,7 @@ $(document).ready(function () {
 		$(this).attr('aria-current', 'page');
 
 		// Retrieves the second class from the clicked element that corresponds to the link
-		var className = $(this).attr('class').split(" ")[1];
+		var className = $(this).attr('class').split(' ')[1];
 
 		// Creates the path to the file based on class name
 		var filePath = className + '.html';
@@ -18,30 +18,30 @@ $(document).ready(function () {
 		// Loads the content from the file into a hidden container/element
 		$.get(filePath, function (data) {
 			// Creates a temporary div element that holds the loaded data
-			var tempDiv = $("<div>").html(data);
+			var tempDiv = $('<div>').html(data);
 
 			// Finds the specific div element in the loaded file
-			var specificContent = tempDiv.find("main").html();
+			var specificContent = tempDiv.find('main').html();
 
 			// Inserts the specific content into the target container
-			$("main").html(specificContent);
+			$('main').html(specificContent);
 
 			// Finds the specific title element in the loaded file
-			var specificTitle = tempDiv.find("title").html();
+			var specificTitle = tempDiv.find('title').html();
 
 			// Inserts the specific content into the target element
-			$("title").html(specificTitle);
+			$('title').html(specificTitle);
 
 			// Updates the URL in the address bar without reloading the page
-			if (className == "index") {
-				var newUrl = window.location.protocol + "//" + window.location.host + "/";
+			if (className == 'index') {
+				var newUrl = window.location.protocol + '//' + window.location.host + '/';
 				history.pushState({ path: newUrl }, '', newUrl);
 			} else {
-				var newUrl = window.location.protocol + "//" + window.location.host + "/" + className + ".html";
+				var newUrl = window.location.protocol + '//' + window.location.host + '/' + className + '.html';
 				history.pushState({ path: newUrl }, '', newUrl);
 			}
 		}).fail(function () {
-			$("main").html("Sorry, there was an error loading the content.");
+			$('main').html('Sorry, there was an error loading the content.');
 		});
 	});
 
@@ -50,8 +50,8 @@ $(document).ready(function () {
 		if (event.state && event.state.path) {
 			// Extract the page name (without leading slash and trailing file extension)
 			var page;
-			if (window.location.pathname == "/") {
-				page = "index";
+			if (window.location.pathname == '/') {
+				page = 'index';
 			}
 			else {
 				page = window.location.pathname.slice(1, -5);
@@ -73,16 +73,16 @@ $(document).ready(function () {
 					$('main').html(specificContent);
 
 					// Finds the specific title element in the loaded file
-					var specificTitle = tempDiv.find("title").html();
+					var specificTitle = tempDiv.find('title').html();
 
 					// Inserts the specific content into the target element
-					$("title").html(specificTitle);
+					$('title').html(specificTitle);
 
 					// Update the aria-current attribute on the link that has a class name named after the page
 					$('a').removeAttr('aria-current');
 					$('a.' + page).attr('aria-current', 'page');
 				}).fail(function () {
-					$('main').html("Sorry, there was an error loading the content.");
+					$('main').html('Sorry, there was an error loading the content.');
 				});
 			}
 		}
