@@ -50,10 +50,10 @@ header {
 		justify-content: center;
 	}
 }
-header img {
+/* header img {
 	margin-top: 1em;
 	margin-left: 1em;
-}
+} */
 header>a#headerlogo {
 	background-image: url("../images/logo-big.png");
 	background-size: contain;
