@@ -90,23 +90,23 @@ footer>a {
 	color: #000;
 }
 
-/* page div and section content */
-#page {
+/* main element div and section content */
+main {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	padding: 0 2%;
 }
-#page > h1 {
+main > h1 {
     margin-bottom: 0;
 	padding-left: 0.5em;
 }
-#page > div {
+main > div {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-#page > div > section {
+main > div > section {
     flex: 1 1 45%;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1em;
@@ -115,6 +115,12 @@ footer>a {
 section p {
 	text-shadow: 0px 0px 8px white;
 }
+section>img.fitimage {
+	max-width: 50%;
+	/* max-height: 50%; */
+}
+
+/* text styling */
 h1,
 h2,
 h3,
@@ -156,10 +162,6 @@ h3 {
 ::selection {
 	color: #ff93fb;
 	background-color: #000;
-}
-section>img.fitimage {
-	max-width: 50%;
-	/* max-height: 50%; */
 }
 
 /* navigation */
