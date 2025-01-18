@@ -40,12 +40,12 @@ header {
 	flex: 0 1 auto;
 	justify-content: space-between;
 }
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 465px) {
 	header {
 		justify-content: space-between;
 	}
 }
-@media screen and (max-width: 439px) {
+@media screen and (max-width: 464px) {
 	header {
 		justify-content: center;
 	}
@@ -66,11 +66,11 @@ header ul {
 	margin-top: 1em;
 	text-align: center;
 	list-style: none;
+	padding: 0;
 }
-header li {
+header ul li {
 	display: inline-block;
-	margin-right: 1rem;
-	margin-bottom: 1rem;
+	margin: 0 0.5rem 0 0.5rem;
 }
 img.skillLogo {
 	float: right;
