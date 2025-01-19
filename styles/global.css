@@ -221,3 +221,27 @@ span#easteregg {
 span#easteregg:hover {
 	color: #ff93fb;
 }
+
+/* style for the "click here to read more" link */
+.toggle-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toggle-link:hover {
+    color: #0056b3;
+}
+
+/* initially hide the additional information */
+.hidden {
+    display: none;
+}
+
+/* display the hidden content when the checkbox is checked */
+.toggle-info:checked ~ .hidden {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}
