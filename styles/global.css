@@ -40,12 +40,12 @@ header {
 	flex: 0 1 auto;
 	justify-content: space-between;
 }
-@media screen and (min-width: 465px) {
+@media screen and (min-width: 538px) {
 	header {
 		justify-content: space-between;
 	}
 }
-@media screen and (max-width: 464px) {
+@media screen and (max-width: 537px) {
 	header {
 		justify-content: center;
 	}
@@ -57,6 +57,7 @@ header {
 header>a#headerlogo {
 	background-image: url("../images/logo-big.png");
 	background-size: contain;
+	background-repeat: no-repeat;
 	height: 36px;
 	width: 94px;
 	margin-top: 1em;
