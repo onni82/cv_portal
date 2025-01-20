@@ -63,6 +63,9 @@ header ul li {
 	header {
 		justify-content: space-between;
 	}
+	header>a#headerlogo {
+		padding-bottom: 10px;
+	}
 }
 @media screen and (max-width: 537px) {
 	header {
