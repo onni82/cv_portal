@@ -7,6 +7,12 @@
 	src: url(Quicksand-Regular.ttf);
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 /* body and html */
 body,
 html {
@@ -62,9 +68,7 @@ header ul li {
 @media screen and (min-width: 538px) {
 	header {
 		justify-content: space-between;
-	}
-	header>a#headerlogo {
-		padding-bottom: 10px;
+		padding-bottom: 1em;
 	}
 }
 @media screen and (max-width: 537px) {
@@ -111,6 +115,12 @@ main > div > section {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1em;
     margin: 0;
+}
+@media screen and (max-width: 537px) {
+	main > div > section {
+        flex: 1 1 100%; /* Stack sections on extremely small screens */
+        max-width: 100%; /* Prevent side-by-side display */
+    }
 }
 section p {
 	text-shadow: 0px 0px 8px white;
