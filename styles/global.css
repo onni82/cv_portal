@@ -46,7 +46,7 @@ header {
 	flex: 0 1 auto;
 	justify-content: space-between;
 }
-header>a#headerlogo {
+header>a#header-logo {
 	background-image: url("../images/logo-big.png");
 	background-size: contain;
 	background-repeat: no-repeat;
