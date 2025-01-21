@@ -20,17 +20,17 @@ Försök lösa denna uppgift utan CSS-ramverk så som Bootstrap. Du kommer ha me
 **Innehåll**
 
 - [x] Alla sidorna på webbplatsen ska ha innehåll
-- [ ] Innehåll som måste finnas någonstans på webbplatsen är:
+- [x] Innehåll som måste finnas någonstans på webbplatsen är:
     - [x] En presentation av dig själv
     - [x] Ditt CV med utbildningar, arbetsplatser m.m. (precis som ett vanligt CV)
-    - [ ] En portfolio med projekt du gjort (du kan som minst lägga in dina skolprojekt men du kan även lägga till andra projekt)
+    - [x] En portfolio med projekt du gjort (du kan som minst lägga in dina skolprojekt men du kan även lägga till andra projekt)
 - [x] Det ska finnas minst en bild på sidan, gärna fler.
 - [x] Resterande sidor kan innehålla bara Lorem Ipsum-text eller så hittar du på något värdefullt så som kontaktuppgifter eller något annat som passar in på sidan.
 
 **Portfolio**
 
-- [ ] Din portfolio ska vara en lista av projekt med en rubrik och en bild samt en knapp besökaren kan klicka på för att få mer information.
-- [ ] När knappen för mer information klickas på ska det dyka upp en modal-popup med lite mer information om projektet. Denna ska inte kräva JavaScript utan enbart byggas med HTML & CSS.
+- [x] Din portfolio ska vara en lista av projekt med en rubrik och en bild samt en knapp besökaren kan klicka på för att få mer information.
+- [x] När knappen för mer information klickas på ska det dyka upp en modal-popup med lite mer information om projektet. Denna ska inte kräva JavaScript utan enbart byggas med HTML & CSS.
 
 **Layout**
 
