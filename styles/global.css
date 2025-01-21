@@ -121,6 +121,9 @@ main > div > section {
 section p {
 	text-shadow: 0px 0px 8px white;
 }
+section span.bold-text {
+	font-weight: bold;
+}
 section>img.fit-image {
 	width: 100%;
 	height: auto;
