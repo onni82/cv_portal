@@ -92,8 +92,8 @@ $(document).ready(function () {
 // Vanilla JavaScript code to handle keypress detection and modal display
 let typedKeys = '';
 const secretCode = '1337';
-const modal = document.getElementById('myModal');
-const closeModal = document.getElementById('closeModal');
+const modal = document.getElementById('easteregg-modal');
+const closeModal = document.getElementById('close-modal');
 
 // Event listener for key presses
 window.addEventListener('keydown', function(event) {
