@@ -29,11 +29,11 @@ body {
 	background-size: 100% auto;
 }
 
-/* div and #boxcontent */
+/* div and #box-content */
 div {
 	display: block;
 }
-#boxcontent {
+#box-content {
 	display: flex;
 	flex-flow: column;
 	height: 100vh;
