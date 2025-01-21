@@ -49,7 +49,7 @@ Denna del ska byggas med Vanilla JavaScript
 - [x] Din webbplats ska vara kompatibel med moderna webbläsare och fungera rimligt bra i alla webbläsare som inte är äldre än tre år.
 - [x] Din HTML-kod ska vara någorlunda korrekt när det kommer till semantik (ex. ingen layout genom tabeller eller ologiska rubriknivåer) samt att du använder semantiska taggar som <nav>.
 - [x] Din CSS-kod ska skapa sidor som mycket väl anpassar sig utifrån olika skärmstorlekar (responsivitet)
-- [ ] Du ska ha en CSS-print som gör att utskriften av CV-sidan blir snygg.
+- [x] Du ska ha en CSS-print som gör att utskriften av CV-sidan blir snygg.
 - [x] Din JavaScript-kod får inte finnas inuti HTML-filerna.
 - [x] Dina påskägg ska fungera på alla sidor.
 
