@@ -76,10 +76,6 @@ header ul li {
 		justify-content: center;
 	}
 }
-img.skillLogo {
-	float: right;
-	width: 50px;
-}
 footer {
 	display: flex;
 	flex: 0 1 40px;
@@ -130,6 +126,10 @@ section>img.fitimage {
 	height: auto;
 	max-width: 500px;
 	/* max-height: 50%; */
+}
+img.skill-logo {
+	float: right;
+	width: 50px;
 }
 
 /* text styling */
