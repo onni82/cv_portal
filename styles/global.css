@@ -94,25 +94,25 @@ main {
 	padding: 0 2%;
 }
 main > h1 {
-    margin-bottom: 0;
+	margin-bottom: 0;
 	padding-left: 0.5em;
 }
 main > div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 main > div > section {
-    flex: 1 1 45%;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 1em;
-    margin: 0;
+	flex: 1 1 45%;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 1em;
+	margin: 0;
 }
 @media screen and (max-width: 537px) {
 	main > div > section {
-        flex: 1 1 100%; /* Stack sections on extremely small screens */
-        max-width: 100%; /* Prevent side-by-side display */
-    }
+		flex: 1 1 100%; /* Stack sections on extremely small screens */
+		max-width: 100%; /* Prevent side-by-side display */
+	}
 }
 section p {
 	text-shadow: 0px 0px 8px white;
@@ -235,17 +235,17 @@ span#easteregg:hover {
 
 /* style for the "click here to read more" link */
 .toggle-link {
-    color: rgb(188, 119, 0);
-    cursor: pointer;
+	color: rgb(188, 119, 0);
+	cursor: pointer;
 }
 
 .toggle-link:hover {
-    color: rgb(222, 141, 0);
+	color: rgb(222, 141, 0);
 }
 
 /* display the hidden content when the checkbox is checked */
 .toggle-info:checked ~ .modal {
-    display: flex;
-    color: #333;
-    font-size: 14px;
+	display: flex;
+	color: #333;
+	font-size: 14px;
 }
