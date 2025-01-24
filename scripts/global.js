@@ -43,10 +43,10 @@ $(document).ready(function () {
 
 			// Updates the URL in the address bar without reloading the page
 			if (className == 'index') {
-				var newUrl = window.location.protocol + '//' + window.location.host + '/';
+				var newUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
 				history.pushState({ path: newUrl }, '', newUrl);
 			} else {
-				var newUrl = window.location.protocol + '//' + window.location.host + '/' + className + '.html';
+				var newUrl = window.location.protocol + '//' + window.location.host + window.location.pathname + className + '.html';
 				history.pushState({ path: newUrl }, '', newUrl);
 			}
 		}).fail(function () {
@@ -59,7 +59,7 @@ $(document).ready(function () {
 		if (event.state && event.state.path) {
 			// Extract the page name (without leading slash and trailing file extension)
 			var page;
-			if (window.location.pathname == '/') {
+			if (window.location.pathname == '/cv_portal/') {
 				page = 'index';
 			}
 			else {
