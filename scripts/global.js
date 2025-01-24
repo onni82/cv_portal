@@ -63,7 +63,7 @@ $(document).ready(function () {
 				page = 'index';
 			}
 			else {
-				page = window.location.pathname.slice(1, -5);
+				page = window.location.pathname.slice(11, -5);
 			}
 
 			if (page) {
