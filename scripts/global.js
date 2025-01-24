@@ -43,10 +43,10 @@ $(document).ready(function () {
 
 			// Updates the URL in the address bar without reloading the page
 			if (className == 'index') {
-				var newUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
+				var newUrl = window.location.protocol + '//' + window.location.host + '/cv_portal/';
 				history.pushState({ path: newUrl }, '', newUrl);
 			} else {
-				var newUrl = window.location.protocol + '//' + window.location.host + window.location.pathname + className + '.html';
+				var newUrl = window.location.protocol + '//' + window.location.host + '/cv_portal/' + className + '.html';
 				history.pushState({ path: newUrl }, '', newUrl);
 			}
 		}).fail(function () {
