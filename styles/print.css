@@ -1,95 +1,95 @@
 /* print styles */
 @media print {
-    /* body and background */
-    body {
-        background-color: white;
-        color: black;
-        font-family: "Quicksand", sans-serif;
-    }
+	/* body and background */
+	body {
+		background-color: white;
+		color: black;
+		font-family: "Quicksand", sans-serif;
+	}
 
-    /* hide non-printable elements */
-    header,
-    footer,
-    .modal,
-    .toggle-info,
-    .toggle-link,
-    img.skill-logo {
-        display: none;
-    }
+	/* hide non-printable elements */
+	header,
+	footer,
+	.modal,
+	.toggle-info,
+	.toggle-link,
+	img.skill-logo {
+		display: none;
+	}
 
-    /* add printable modal */
-    .modal.print {
-        display: block;
-        position: static;
-        background-color: transparent;
-        box-shadow: none;
-        padding: 0;
-        margin: 0;
-    }
-    .modal.print>.modal-content {
-        display: block;
-        position: static;
-        background-color: transparent;
-        padding: 0;
-        border: none;
-        text-align: left;
-    }
-    .modal-content>label {
-        display: none;
-    }
+	/* add printable modal */
+	.modal.print {
+		display: block;
+		position: static;
+		background-color: transparent;
+		box-shadow: none;
+		padding: 0;
+		margin: 0;
+	}
+	.modal.print>.modal-content {
+		display: block;
+		position: static;
+		background-color: transparent;
+		padding: 0;
+		border: none;
+		text-align: left;
+	}
+	.modal-content>label {
+		display: none;
+	}
 
-    /* manually hide elements from print */
-    .no-print {
-        display: none;
-    }
+	/* manually hide elements from print */
+	.no-print {
+		display: none;
+	}
 
-    /* main content adjustments */
-    main {
-        padding: 1em;
-    }
+	/* main content adjustments */
+	main {
+		padding: 1em;
+	}
 
-    /* section styling */
-    section {
-        background-color: white;
-        color: black;
-        margin-bottom: 1em;
-    }
+	/* section styling */
+	section {
+		background-color: white;
+		color: black;
+		margin-bottom: 1em;
+	}
 
-    /* links displayed as text */
-    a {
-        color: black;
-        text-decoration: underline;
-    }
-    a:after {
-        content: " (" attr(href) ")";
-    }
+	/* links displayed as text */
+	a {
+		color: black;
+		text-decoration: underline;
+	}
+	a:after {
+		content: " (" attr(href) ")";
+	}
 
-    /* typography adjustments */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: black;
-    }
-    h1 {
-        font-size: 2em;
-        margin-bottom: 0.5em;
-    }
-    h2 {
-        font-size: 1.5em;
-        margin-bottom: 0.3em;
-    }
-    p {
-        font-size: 1em;
-        margin-bottom: 0.5em;
-        line-height: 1.5;
-    }
+	/* typography adjustments */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: black;
+	}
+	h1 {
+		font-size: 2em;
+		margin-bottom: 0.5em;
+	}
+	h2 {
+		font-size: 1.5em;
+		margin-bottom: 0.3em;
+	}
+	p {
+		font-size: 1em;
+		margin-bottom: 0.5em;
+		line-height: 1.5;
+	}
 
-    /* image handling */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+	/* image handling */
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 }
