@@ -54,7 +54,7 @@ Denna del ska byggas med Vanilla JavaScript
 - [x] Dina påskägg ska fungera på alla sidor.
 
 **Deploy**
-- [ ] Publicera din sida på Github Pages så att den blir åtkomlig via en länk.
+- [x] Publicera din sida på Github Pages så att den blir åtkomlig via en länk.
 
 **VG-nivå (Frivillig)**
 
@@ -73,3 +73,10 @@ Skriv en sammanhängande text där du nyanserat svarar och reflekterar över fö
 
 - Du ska skriva minst 300 ord men hur mycket du skriver är upp till dig.
 - Du behöver inte vara orolig för språket, du läser inte en kurs i kommunikation. Bara vi förstår vad du skriver så kan vi bedöma inlämningen!
+
+# Din inlämning
+- Lägg alla dina HTML, CSS och bild-filer i en och samma mapp
+- Skapa ett github-repository med din kod
+- Skicka in länken till din Github repository och en länk till din sida på Github pages på Canvas
+- För VG-delen ska du även skicka ett PDF-dokument med din reflektion
+- Se till att ditt namn och klass står först i dokumentet
