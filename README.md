@@ -1,3 +1,7 @@
+# CV-portal
+- GitHub Pages: [Länk](https://onni82.github.io/cv_portal/)
+- Reflektion och resonemang: [Länk](https://github.com/onni82/cv_portal/blob/main/Onni%20Bucht%2C%20NET24%2C%20CV-portal%20reflektion%20och%20resonemang.pdf)
+
 # Om uppgiften
 
 Denna uppgift går ut på att du ska koda en enklare webbplats från grunden med **HTML,** **CSS & JavaScript.** Det du ska bygga är en CV-sida för dig själv med information om dig, ditt CV och en portfolio.
